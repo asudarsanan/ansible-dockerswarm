@@ -1,4 +1,5 @@
-- name : Provistion Docker Swarm Cluster
+---
+- name: Provistion Docker Swarm Cluster
   hosts: all
   roles:
-    - {{ role: ansible-dockerswarm }}
+    - { role: "../ansible-dockerswarm" }
