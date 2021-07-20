@@ -1,5 +1,6 @@
 ---
 - name: Provistion Docker Swarm Cluster
   hosts: all
+  become: true
   roles:
     - { role: "../ansible-dockerswarm" }
